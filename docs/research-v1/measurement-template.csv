@@ -1,0 +1,1 @@
+protocol_version,scenario_id,hypothesis,evidence_class,trial_id,session_id,commit,device_model,firmware,os_api,app_sha256,transport,condition,ground_truth,expected_state,observed_state,latency_ms,clock_error_ms,tp,fp,fn,tn,ambiguous,wrong_binding,stale_acceptance,cpu_percent,ram_delta_mb,queue_peak,energy_delta_mwh,consent_checked,result,abort_reason

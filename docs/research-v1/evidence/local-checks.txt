@@ -1,0 +1,57 @@
+PPS local checks; 2026-10-21; Windows; Python 3.12.10; Ruff 0.14.1; Bandit 1.8.6
+COMMAND: python -m unittest discover -s conformance -v
+test_reserved_nonzero (test_pps_reference_receiver.PpsParserTests.test_reserved_nonzero) ... ok
+test_valid (test_pps_reference_receiver.PpsParserTests.test_valid) ... ok
+test_wrong_length (test_pps_reference_receiver.PpsParserTests.test_wrong_length) ... ok
+test_wrong_version (test_pps_reference_receiver.PpsParserTests.test_wrong_version) ... ok
+test_all_supported_flags_remain_t0 (test_reserved_fields.ReservedFieldsTests.test_all_supported_flags_remain_t0) ... ok
+test_each_reserved_capability (test_reserved_fields.ReservedFieldsTests.test_each_reserved_capability) ... ok
+test_each_reserved_flag (test_reserved_fields.ReservedFieldsTests.test_each_reserved_flag) ... ok
+test_every_unsupported_policy_version (test_reserved_fields.ReservedFieldsTests.test_every_unsupported_policy_version) ... ok
+test_seeded_malformed_corpus (test_reserved_fields.ReservedFieldsTests.test_seeded_malformed_corpus) ... ok
+test_wrong_frame_type (test_reserved_fields.ReservedFieldsTests.test_wrong_frame_type) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.008s
+
+OK
+EXIT: 0
+COMMAND: python -m ruff check receiver-kit conformance
+All checks passed!
+EXIT: 0
+COMMAND: python -m ruff format --check receiver-kit conformance
+3 files already formatted
+EXIT: 0
+COMMAND: python -m bandit -r receiver-kit
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.12.10
+Run started:2026-10-21 09:22:50.674950
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 54
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+EXIT: 0
+COMMAND: python -m compileall -q receiver-kit conformance
+EXIT: 0
+COMMAND: git diff --check
+EXIT: 0

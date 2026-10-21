@@ -69,6 +69,11 @@ A received Bluetooth/radio signal is **not proof of a person's visual identity**
 
 ## Independent review
 
+The [Research & Validation Package v1.0](docs/research-v1/README.md) adds measurable
+hypotheses, reproducible field protocols, a documented Vuzix test plan, privacy
+requirements, a prospective partner dossier and a gated roadmap. Local parser
+tests are distinct from Android and real third-party device validation.
+
 Independent implementation, security review and measured T2 camera-to-person subject-binding validation are invited. Please use GitHub Issues for technical findings and interoperability questions.
 
 ## Project identity
