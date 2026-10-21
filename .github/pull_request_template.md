@@ -17,3 +17,7 @@ Evidence class: SYNTHETIC_ONLY / SIMULATOR / PHYSICAL_DEVICE / NOT_MEASURED
 - [ ] No implicit relicensing, CLA, patent promise or rights assignment
 - [ ] No manufacturer adoption, standardisation or partnership inferred
 - [ ] Independent reviewer/gates still missing explicitly listed
+
+- [ ] Origin/citation and independent contributors credited accurately
+- [ ] Standards/hardware proposals use the relevant templates and gates
+- [ ] Release/DOI/funding requests are separately identified and unexecuted

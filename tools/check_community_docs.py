@@ -19,11 +19,28 @@ paths = [
         "GOVERNANCE.md",
         "CODE_OF_CONDUCT.md",
         "SECURITY.md",
+        "ORIGIN.md",
+        "AGENTS.md",
+        "FUNDING.md",
     )
 ] + sorted((ROOT / "docs/community").glob("*.md"))
+paths += [
+    path
+    for folder in ("PROMPTS", "SPECIFICATIONS", "EXPERIMENTS", "STANDARDIZATION")
+    for path in sorted((ROOT / folder).glob("*.md"))
+]
 checked = 0
 for path in paths:
     content = path.read_text(encoding="utf-8")
+    assert content.startswith("# "), f"Missing title: {path}"
+    assert content.endswith("\n"), f"Missing final newline: {path}"
+    assert "\ufffd" not in content, f"Invalid encoding: {path}"
+    assert all(
+        line == line.rstrip() or line.endswith("  ") for line in content.splitlines()
+    ), f"Trailing whitespace: {path}"
+    assert sum(line.startswith("```") for line in content.splitlines()) % 2 == 0, (
+        f"Unclosed fence: {path}"
+    )
     for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
         if "://" in target or target.startswith("#"):
             continue

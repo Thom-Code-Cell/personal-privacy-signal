@@ -21,3 +21,6 @@ Cite independent implementations and reports separately with their authors,
 revision and evidence class. Attribution preserves origin without implying
 endorsement, ownership of others' results, W3C affiliation or patent permission.
 A future archive/DOI deposit is a separate publication decision, not automatic.
+
+See [CITATION.cff](../../CITATION.cff), [origin](../../ORIGIN.md) and
+[archive approval gates](../../STANDARDIZATION/PUBLICATION.md).

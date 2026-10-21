@@ -1,0 +1,31 @@
+name: Hardware validation
+description: Plan or report an authorized supported-device experiment.
+title: "[Hardware validation] "
+body:
+  - type: markdown
+    attributes:
+      value: "Synthetic or reviewed aggregate data only. Security details go to private reporting."
+  - type: textarea
+    id: field0
+    attributes:
+      label: "Exact revision, profile, supported SDK/firmware and redacted setup"
+    validations:
+      required: true
+  - type: textarea
+    id: field1
+    attributes:
+      label: "Hypothesis, control, sample rationale, thresholds and stop criteria"
+    validations:
+      required: true
+  - type: textarea
+    id: field2
+    attributes:
+      label: "Consent/privacy/operator gates; no private records"
+    validations:
+      required: true
+  - type: textarea
+    id: field3
+    attributes:
+      label: "Evidence class, aggregates, failures, limitations and reproduction"
+    validations:
+      required: true

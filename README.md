@@ -148,3 +148,20 @@ license, patent pledge or rights assignment. See the [rights review](docs/commun
 and [decision brief](docs/community/LICENSE-DECISION.md): preferred future option
 Apache-2.0 after explicit rights-holder approval; noncommercial alternatives have
 research/adoption tradeoffs and cannot undo existing permissions.
+
+## Open international research infrastructure
+
+Our public-interest vision is interoperable privacy preferences that anyone can
+study and challenge. This does not assert registered charitable status. Existing
+license terms, rather than public visibility alone, govern reuse.
+
+- [Origin and credit](ORIGIN.md), [citation metadata](CITATION.cff).
+- [Full AI research prompt](PROMPTS/PPS-INTERNATIONAL-STANDARD.md), [assistant rules](AGENTS.md).
+- [Specification proposals](SPECIFICATIONS/README.md), [experiments](EXPERIMENTS/README.md),
+  [conformance checklist](SPECIFICATIONS/CONFORMANCE-CHECKLIST.md).
+- [Standardization research](STANDARDIZATION/README.md), [roadmap](STANDARDIZATION/ROADMAP.md),
+  [discussion, publication and DOI gates](STANDARDIZATION/PUBLICATION.md).
+- [Funding possibilities and limits](FUNDING.md); no secured funding or automatic compensation.
+
+These entry points preserve existing specifications and research. New proposals
+do not amend frozen v0.1 semantics by implication.
