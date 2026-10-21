@@ -120,8 +120,11 @@ Local tests cover syntax and rejection of unsupported/reserved values. The parse
 has no Bluetooth stack, signatures, freshness validation, person binding or actual
 capture enforcement. Android, Vuzix and other physical-device gates remain open.
 [Issue #1](https://github.com/Thom-Code-Cell/personal-privacy-signal/issues/1) tracks
-wearable notice work; [Draft #2](https://github.com/Thom-Code-Cell/personal-privacy-signal/pull/2)
-contains research preparation, not a completed hardware validation.
+wearable notice work; [merged research PR #2](https://github.com/Thom-Code-Cell/personal-privacy-signal/pull/2)
+and [merged review-corrections PR #3](https://github.com/Thom-Code-Cell/personal-privacy-signal/pull/3)
+provide public experimental research, not completed hardware validation.
+[Open validation gates](https://github.com/Thom-Code-Cell/personal-privacy-signal/issues/4)
+track remaining rights, independent review and real-device evidence.
 
 ## Community, roadmap and research safety
 
