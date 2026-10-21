@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the exact commit used; cite independent contributions separately."
+title: "PPS / PPS+ - Personal Privacy Signal: experimental research initiative"
+type: software
+authors:
+  - family-names: Hullin
+    given-names: Thomas
+    affiliation: "TH Analytica, Switzerland"
+repository-code: "https://github.com/Thom-Code-Cell/personal-privacy-signal"
+url: "https://github.com/Thom-Code-Cell/personal-privacy-signal"
+abstract: >-
+  Experimental protocol and research infrastructure for expressing privacy
+  preferences to Physical-AI systems. The reference parser does not implement
+  authentication, person binding or recording enforcement.
+keywords:
+  - privacy
+  - Physical AI
+  - interoperability
+# No DOI, release date or software version is asserted for an unreleased branch.

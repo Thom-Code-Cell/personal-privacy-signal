@@ -1,0 +1,25 @@
+name: Bug or reproducibility failure
+description: Report a safe synthetic reproduction; vulnerabilities go to SECURITY.md.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, personal/device identifiers, sensitive exploits or participant data."
+  - type: input
+    id: revision
+    attributes:
+      label: Full commit and protocol version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Commands, synthetic input and environment/tool versions
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected vs observed result, evidence class and limitations
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+name: Standards proposal
+description: Propose a scoped change or evaluate a standards venue.
+title: "[Standards proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: "Synthetic or reviewed aggregate data only. Security details go to private reporting."
+  - type: textarea
+    id: field0
+    attributes:
+      label: "Problem, baseline, prior art and alternatives"
+    validations:
+      required: true
+  - type: textarea
+    id: field1
+    attributes:
+      label: "Requirements, compatibility and migration"
+    validations:
+      required: true
+  - type: textarea
+    id: field2
+    attributes:
+      label: "Security/privacy/IP questions and primary process sources"
+    validations:
+      required: true
+  - type: textarea
+    id: field3
+    attributes:
+      label: "Vectors, evidence, independent review and open gates"
+    validations:
+      required: true

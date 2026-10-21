@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security reporting
+    url: https://github.com/Thom-Code-Cell/personal-privacy-signal/security/advisories/new
+    about: Read the private disclosure instructions before posting vulnerability details.

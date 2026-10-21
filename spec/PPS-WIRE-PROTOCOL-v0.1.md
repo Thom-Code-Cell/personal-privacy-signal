@@ -48,6 +48,12 @@ v0.1 does not place a truncated MAC/signature in the open discovery frame. Share
 
 Receivers MUST reject wrong length, unsupported wire version/frame type and nonzero reserved byte. Parsing MUST be bounded before trust upgrade. Duplicate T0 frames MAY be coalesced. T1 freshness comes from authenticated session evidence, not epoch_hint alone.
 
+Research-package clarification (2026-10-21): the reference receiver additionally
+rejects policy versions other than 0x01, reserved policy bits 8–15 and reserved
+capability bits 4–7. This intentionally tightens acceptance of previously parsed
+unknown semantics without changing the 17-byte layout or valid v0.1 fields.
+Rejection is not permission to proceed with otherwise restricted processing.
+
 ## Extensions and production blockers
 
 New policy semantics require a policy-version change; incompatible layout requires a wire-version/frame-type change. Production freeze still requires independent crypto review, final EID construction and timing, second implementation, fuzzing, negative vectors, measured resource limits and binding validation.
