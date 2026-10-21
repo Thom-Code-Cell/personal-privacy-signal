@@ -1,7 +1,7 @@
 name: Research checks
 on:
   push:
-    branches: [main, research/pps-validation-v1]
+    branches: [main, research/pps-validation-v1, research/pps-review-remediation-v1]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -27,6 +27,8 @@ jobs:
       - run: python -m bandit -r receiver-kit -q
       - run: python -m compileall -q receiver-kit conformance tools
       - run: python tools/check_community_docs.py
+      - run: python tools/check_policy_mutations.py
+      - run: python tools/check_review_evidence.py
   secrets:
     runs-on: ubuntu-latest
     steps:

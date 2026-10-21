@@ -36,7 +36,7 @@ The EID MUST NOT be a stable account/device/person identifier and MUST rotate. A
 
 T0: syntactically valid discovery -> DISCOVERED_UNVERIFIED.
 
-T1: authenticated local session + canonical policy digest + fresh session evidence -> AUTHENTICATED_UNBOUND. Android Mobile Binding v0.2 is the current T1-oriented experiment.
+T1: authenticated local session + canonical policy digest + fresh session evidence -> AUTHENTICATED_UNBOUND. Android Mobile Binding v0.2 is a reported external T1-oriented experiment; its source evidence is not present or verified here.
 
 T2: T1 plus a documented subject-binding profile/evidence -> BOUND state. BLE alone never establishes T2.
 
@@ -57,3 +57,7 @@ Rejection is not permission to proceed with otherwise restricted processing.
 ## Extensions and production blockers
 
 New policy semantics require a policy-version change; incompatible layout requires a wire-version/frame-type change. Production freeze still requires independent crypto review, final EID construction and timing, second implementation, fuzzing, negative vectors, measured resource limits and binding validation.
+
+Editorial review clarification (2026-10-21): external Android evidence is labelled
+as reported only. No wire layout, trust level or parsing rule changes in this correction.
+See [current evidence](../docs/review/remediation-v1/CLAIMS.md).

@@ -35,3 +35,10 @@ Origin credit gives no veto over independent work. No guaranteed future standard
 byline, royalty, salary or funding follows. Standards bodies decide their own
 authorship/editorial acknowledgements under their rules. See the
 [rights review](docs/community/RIGHTS-REVIEW.md) and [funding](FUNDING.md).
+
+## Rechecking recorded sources
+
+[Origin evidence](docs/review/remediation-v1/origin-evidence.json) preserves source
+revision, recorded date, content hash and attribution text. Run
+`python tools/check_review_evidence.py` in a full clone. This detects source drift,
+not historical first invention or legal title. Independent contributors keep credit.

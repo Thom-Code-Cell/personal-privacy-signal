@@ -16,6 +16,9 @@ Transport flags are a compact projection of richer PPS+ semantics and are versio
 
 User alerts, safety processing, emergency escalation and emergency-only disclosure remain in the richer semantic document; they are not compressed into discovery bits because exception semantics require explicit resolution and audit.
 
-For T1, semantic policy MUST be serialized deterministically before hashing. The Android experiment uses canonical policy JSON plus SHA-256. Exact cross-language canonicalization remains a production-freeze item.
+For T1, semantic policy MUST be serialized deterministically before hashing. A historical external Android experiment is reported to use canonical policy JSON plus SHA-256; source artifacts are absent here and not independently verified. Exact cross-language canonicalization remains a production-freeze item.
 
 An unset DENY bit is not affirmative consent. A stricter applicable place policy may further restrict a personal policy under the current candidate conflict model.
+
+Editorial review clarification (2026-10-21): Android statement is reported external
+evidence, not a verified implementation claim. Policy flag semantics are unchanged.

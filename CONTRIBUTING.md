@@ -27,3 +27,7 @@ certification. No mandatory real-name sign-off; GitHub noreply is recommended.
 Python 3.11 or later is the proposed test baseline. CI runs 3.11 and 3.12.
 Hardware claims require the [replication record](docs/community/REPLICATION.md)
 and existing P1–P6 protocols. A mock or parser test cannot pass a device gate.
+
+For review corrections, use the [rights scope questions](docs/review/remediation-v1/RIGHTS.md)
+and record source/authorization per file. No maintainer or AI may attest another
+person's rights without evidence. Unresolved authority stays pending.

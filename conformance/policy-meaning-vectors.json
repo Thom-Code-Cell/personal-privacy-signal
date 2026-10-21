@@ -1,0 +1,39 @@
+{
+  "source": "spec/PPS-WIRE-PROTOCOL-v0.1.md#policy-flags and spec/PPS-POLICY-MAPPING-v0.1.md",
+  "scope": "Spec-derived literals, not an independent external validation or authentication test",
+  "vectors": [
+    {
+      "hex": "0101010001000000000000000000000000",
+      "restriction": "capture_deny"
+    },
+    {
+      "hex": "0101010002000000000000000000000000",
+      "restriction": "identification_deny"
+    },
+    {
+      "hex": "0101010004000000000000000000000000",
+      "restriction": "profiling_deny"
+    },
+    {
+      "hex": "0101010008000000000000000000000000",
+      "restriction": "emotion_inference_deny"
+    },
+    {
+      "hex": "0101010010000000000000000000000000",
+      "restriction": "retention_deny"
+    },
+    {
+      "hex": "0101010020000000000000000000000000",
+      "restriction": "cloud_upload_deny"
+    },
+    {
+      "hex": "0101010040000000000000000000000000",
+      "restriction": "training_deny"
+    },
+    {
+      "hex": "0101010080000000000000000000000000",
+      "restriction": "commercial_use_deny"
+    }
+  ],
+  "source_revision": "3225cef446c3b0d1348ffab614ed4be154842ab3"
+}

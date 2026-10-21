@@ -29,6 +29,7 @@ paths += [
     for folder in ("PROMPTS", "SPECIFICATIONS", "EXPERIMENTS", "STANDARDIZATION")
     for path in sorted((ROOT / folder).glob("*.md"))
 ]
+paths += sorted((ROOT / "docs/review/remediation-v1").glob("*.md"))
 checked = 0
 for path in paths:
     content = path.read_text(encoding="utf-8")
