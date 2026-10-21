@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .ruff_cache/
 build/
+.venv/
+private-data/
+raw-data/
+consent-records/
+.env
+.env.*

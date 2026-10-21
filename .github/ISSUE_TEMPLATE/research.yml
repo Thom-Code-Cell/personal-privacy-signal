@@ -1,0 +1,29 @@
+name: Research proposal or question
+description: Propose an independent, bounded experiment or discuss an open question.
+title: "[Research] "
+body:
+  - type: markdown
+    attributes:
+      value: "Public channel: synthetic data only. No participant records, raw logs, private correspondence or security exploits."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question, hypothesis and existing issue/spec references
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method, control, sample size and acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Evidence class, resources, rights, privacy/ethics gates and limitations
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Proposed output and volunteer role (no commitment or cost assumed)
