@@ -1,0 +1,9 @@
+Publication review 2026-10-21; Gitleaks 8.24.3; official archive SHA256 verified; output redacted.
+Scope: origin/main..HEAD and local directory, after author metadata sanitization.
+11:26AM INF 2 commits scanned.
+11:26AM INF scanned ~48581 bytes (48.58 KB) in 150ms
+11:26AM INF no leaks found
+History scan EXIT: 0
+11:26AM INF scanned ~107866 bytes (107.87 KB) in 30ms
+11:26AM INF no leaks found
+Directory scan EXIT: 0

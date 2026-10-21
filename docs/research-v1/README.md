@@ -2,6 +2,9 @@
 
 TH Analytica · 21.10.2026 · Forschungsstand, keine Produktionsfreigabe.
 
+**Research & Validation – Experimental.** Keine einsatzbereite Datenschutzlösung.
+Android-, Vuzix- und echte Fremdgerätevalidierung stehen weiterhin aus.
+
 ## Inhalt
 
 1. [Bestandsaufnahme und Evidenz](01-inventory.md)

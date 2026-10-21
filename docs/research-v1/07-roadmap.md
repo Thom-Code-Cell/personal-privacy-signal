@@ -32,7 +32,8 @@ Rollen sind Vorschläge; unbesetzte Rollen dürfen kein Gate selbst attestieren.
 
 ## Entscheidung jetzt
 
-GO für lokales Forschungs-/Reviewpaket und reversible Parserhärtung.
+GO für Forschungs-/Reviewpaket, reversible Parserhärtung und nach ausdrücklicher
+Freigabe die öffentliche Draft-PR als Research & Validation – Experimental.
 NO-GO für Produktionsreife, universelle Kamerasperre, Herstelleradoption,
 bestätigte T2-Bindung und reale Fremdgerätewirkung. Keine Zeitplanung setzt
 ungeklärte Partner-/Geräteverfügbarkeit als gegeben voraus.

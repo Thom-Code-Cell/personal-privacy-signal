@@ -1,7 +1,9 @@
 # Abschlussbericht · PPS Research & Validation Package v1.0
 
-Stand: 21.10.2026, TH Analytica. Lokales Reviewpaket fertig; Veröffentlichung,
-öffentliche PR, Merge und Produktionsfreigabe nicht erfolgt.
+Stand: 21.10.2026, TH Analytica. Research & Validation – Experimental.
+Öffentlicher Branch-Push und Draft-PR wurden nachträglich ausdrücklich freigegeben,
+vorbehaltlich Sicherheits- und Datenschutzprüfung. Kein Merge und keine
+Produktionsfreigabe. Veröffentlichungsprüfung: [Nachweis](09-publication-review.md).
 
 ## Lieferumfang und technische Änderung
 
@@ -46,9 +48,9 @@ Ausführbare Details und Exitcodes: `evidence/local-checks.txt`.
 Basiscommit: `17c278d48e6cf74ee81e0a23f80c3fa28c25b5f8`.
 Arbeitsbranch: `research/pps-validation-v1`. Exakte lokale neue Commit-IDs stehen
 im ausgelieferten `COMMIT-AND-HANDOFF.md`; sie werden nach Abschluss aus Git gelesen.
-Ein PR-Entwurf liegt als `PR-DRAFT.md` bei. Es gibt keinen neuen PR-Link, da weder
-Push noch öffentliche PR vorgenommen wurden. Das Zielrepository ist öffentlich;
-die im Auftrag gesondert verlangte Zustimmung zur Veröffentlichung liegt nicht vor.
+Ein PR-Entwurf liegt als `PR-DRAFT.md` bei. Der konkrete PR-Link wird nach der
+Erstellung im Übergabenachweis und im Chat gemeldet. Das Zielrepository ist öffentlich;
+die gesonderte Zustimmung für Branch-Push und öffentliche Draft-PR liegt vor.
 Bestehende Links: [offenes Issue #1](https://github.com/Thom-Code-Cell/personal-privacy-signal/issues/1),
 [separater Website-PR #103](https://github.com/Thom-Code-Cell/th-analytica-2025/pull/103),
 [Dependency-PR #104](https://github.com/Thom-Code-Cell/th-analytica-2025/pull/104).
@@ -59,7 +61,7 @@ ein Connector-Suchversuch lieferte keinen auswertbaren Originalmail-Nachweis.
 
 ## Offene Punkte und Entscheidungen
 
-- Öffentlichen Branch-Push und Draft-PR gesondert freigeben; kein Merge dadurch.
+- Autorisierten Branch-Push und Draft-PR abschliessen; kein Merge dadurch.
 - Studienleitung, Datenschutzreview, unabhängigen Reviewer und Android-Verantwortung
   verbindlich benennen. Partnerrollen sind unbesetzt, keine Zusagen voraussetzen.
 - Fehlende Originalbelege zu Android Mobile Binding und berichteter Korrespondenz

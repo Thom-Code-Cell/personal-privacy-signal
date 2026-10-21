@@ -1,4 +1,9 @@
-# PPS Research & Validation Package v1.0 und strikte T0-Semantikprüfung
+# Research & Validation – Experimental: PPS Package v1.0
+
+**Experimental research only. Keine einsatzbereite Datenschutzlösung.**
+Android-, Vuzix- und echte Fremdgerätevalidierung stehen aus.
+Freigegeben ist ausschliesslich die öffentliche Draft-PR; kein Merge,
+Produktionsupdate, E-Mail-Versand oder externe Ankündigung.
 
 Der bisherige T0-Parser akzeptierte unbekannte Policy-Versionen und reservierte
 Policy-/Capability-Bits. Solche Frames werden jetzt explizit zurückgewiesen;
