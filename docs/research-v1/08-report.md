@@ -1,5 +1,9 @@
 # Abschlussbericht · PPS Research & Validation Package v1.0
 
+> HISTORICAL SNAPSHOT: research package before community CI was added.
+> NOT_RUN statements below refer to that earlier stage, not the current branch.
+> See [current evidence and limits](../review/remediation-v1/CLAIMS.md). Original results retained.
+
 Stand: 21.10.2026, TH Analytica. Research & Validation – Experimental.
 Öffentlicher Branch-Push und Draft-PR wurden nachträglich ausdrücklich freigegeben,
 vorbehaltlich Sicherheits- und Datenschutzprüfung. Kein Merge und keine

@@ -1,0 +1,345 @@
+{
+  "base": "17c278d48e6cf74ee81e0a23f80c3fa28c25b5f8",
+  "head": "3225cef446c3b0d1348ffab614ed4be154842ab3",
+  "previous": "e716ccf2f38fe5c5048f895860114bedee5403b4",
+  "file_count": 56,
+  "last_addition_count": 22,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "2702468be507dbdaa76c72d1c60d97587e79ac1d56080bc746a7ef9d7a8942b3",
+      "lines": 25
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "3c87465ca8177365376c29eea4ea07bb132c5fe192218430cbd65df682044d2e",
+      "lines": 5
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/hardware.yml",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "b90a05673bbb88845a17879f53a182cd8cedd8ce059dd322ace32b8f27268e34",
+      "lines": 31
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/replication.yml",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "9ad559796adb466d60a54043f5459fe20bcefe280ce045813a4dd06142bdd66f",
+      "lines": 25
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/research.yml",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "0fcd0d7cb3f1936d4dbb2b65a21cb6a6a71ca4d73c7a9e5e163ac6157f489528",
+      "lines": 29
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/standards.yml",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "60c819b5ffcd405f292b0dc345e60c6b8f554c53e0a2b05ccbd9a4077ef54d30",
+      "lines": 31
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "a62207318c43768ed1583318d9c1b87c9296b7364b641c29b123c4b3c39ca938",
+      "lines": 23
+    },
+    {
+      "path": ".github/workflows/research-checks.yml",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "7be14d7feccfa8b81edde32807c18cee0e0c5aa98c9357229e2efb3a31fd585a",
+      "lines": 48
+    },
+    {
+      "path": ".gitignore",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "22ce9729d0774b8a5371eab253412e7d6592541707f760cda07eb26728b857b4",
+      "lines": 10
+    },
+    {
+      "path": "AGENTS.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "8cd2fbea05398ffeaf9b69e90afb167c415fa990fa9ac53fb60a0d7661664cb1",
+      "lines": 27
+    },
+    {
+      "path": "CITATION.cff",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "380539183633ff5577f915ac1e174556869f962aa3db900915f8008688e0a4de",
+      "lines": 19
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "e0d07cea6ac8d631ca75e16eb9908d637712f7082f1a68a357bdde238733ec87",
+      "lines": 23
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "4eadf3cc12bdc89bcbfc879f1fdc456e9c144c4f45ea41e3faa08179adb828d0",
+      "lines": 29
+    },
+    {
+      "path": "EXPERIMENTS/README.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "f1223abd7f7c3449b21163b885b27dbf77b2c332c1642631412d7a3521f19cb8",
+      "lines": 16
+    },
+    {
+      "path": "EXPERIMENTS/VALIDATION-TEMPLATE.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "88fa61d3b77097caba88f992290b1dacd4b66d8b09ddd7e9726761df3af61b19",
+      "lines": 24
+    },
+    {
+      "path": "FUNDING.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "bdd43c67e60dfc394621a1f67cc68c04961a4590de20730a3c1d3d626d18b95b",
+      "lines": 24
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "c3a5dff6ee5ab59d819ad03edb7d282898a6738ab7aac109362f9fb56ea49fb2",
+      "lines": 36
+    },
+    {
+      "path": "ORIGIN.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "3a1cd520e2c60801002970e329266de24d02e5cbddea7f5524ffcd5ff26432a4",
+      "lines": 37
+    },
+    {
+      "path": "PR-DRAFT.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "b054046d2259d25f7a18aee1c15b3d1dca9a5cdc24e2130cd541645f328612df",
+      "lines": 26
+    },
+    {
+      "path": "PROMPTS/PPS-INTERNATIONAL-STANDARD.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "853f5c40b33f53be5ec1c0a15c282e3c9f1a59fcd4af7ab4051c4ed32dc9698d",
+      "lines": 126
+    },
+    {
+      "path": "README.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "dfc4b3e0a72e6aa399d90b503990a90119fe00c72d230300ca2bea918dc49d4f",
+      "lines": 167
+    },
+    {
+      "path": "SECURITY.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "fa3aab37f33de3bf3526abae9bc6e0d85d6ea718c1efdd2c8c885f30ab087e61",
+      "lines": 27
+    },
+    {
+      "path": "SPECIFICATIONS/CONFORMANCE-CHECKLIST.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "6cd460e613b8916ebd6e924048ca4f3338beddbff5c6496ca47a821b4706414b",
+      "lines": 22
+    },
+    {
+      "path": "SPECIFICATIONS/PROPOSAL-TEMPLATE.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "ccfce7e7dce17cf61682df6cebc9cea32261961e2a58e176fb1df296d038c612",
+      "lines": 18
+    },
+    {
+      "path": "SPECIFICATIONS/README.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "f0966972b238d07ec2ab86706d947f9bba8b36780cd0708a94cc4084dbe36dbe",
+      "lines": 13
+    },
+    {
+      "path": "STANDARDIZATION/PRIOR-ART.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "35236b7b55d10a756e9a35098c1ea2877021b5529d8376a10d7365efa2ae8786",
+      "lines": 15
+    },
+    {
+      "path": "STANDARDIZATION/PUBLICATION.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "a3eccfc6e26c696eb25c0995a35600eeb25384ac9a900b03fcce266fec20d7e6",
+      "lines": 28
+    },
+    {
+      "path": "STANDARDIZATION/README.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "16dd26f3a554c3e87b97a9a424dcf35b2657ef8c079f903d20f8ec299a2b9791",
+      "lines": 15
+    },
+    {
+      "path": "STANDARDIZATION/ROADMAP.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "cb84691b0292c24d7f59396ed6246ef77e8bdfd5f84aaaaddf809e09bf1617e4",
+      "lines": 34
+    },
+    {
+      "path": "conformance/test_pps_reference_receiver.py",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "6cbdf679c1d0de63c18b8efb70c3b065f658d5cc08a1e6226ddfdf195478a187",
+      "lines": 35
+    },
+    {
+      "path": "conformance/test_reserved_fields.py",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "2be601a5c19f9952b14531ceb131c64b0ac48cf4484c22a17926c72408a231ef",
+      "lines": 56
+    },
+    {
+      "path": "docs/community/FAQ.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "fd5be137d7045d6fe9ad3915fed63079cc7ee21fbc1557c0d55a95b5d9975c10",
+      "lines": 43
+    },
+    {
+      "path": "docs/community/INVITATION.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "c30e37de7bbe2424f2dfa44574d4639b6cd41cd422dbd49a52c9b070693b57d3",
+      "lines": 24
+    },
+    {
+      "path": "docs/community/LICENSE-DECISION.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "183197c8d954c9b60bdf4b74dd0344c790aaf6135a7e3c15bbf969b92e2bdd1e",
+      "lines": 56
+    },
+    {
+      "path": "docs/community/OPEN-RESEARCH-IMPLEMENTATION.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "4facfda9283e6b8bc9578f207862d98b7d417d88245d611cbf6753cd4c005afe",
+      "lines": 51
+    },
+    {
+      "path": "docs/community/REPLICATION.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "858eec59b3d202a5651b308b06e5e077a93f0512dd18d875beba70782aa33906",
+      "lines": 37
+    },
+    {
+      "path": "docs/community/RIGHTS-REVIEW.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "06e1f8fea4c27ec2ae6b94efcd787bc20a99b45562b2fea0e924f2b233865749",
+      "lines": 39
+    },
+    {
+      "path": "docs/community/VERSIONING-CITATION.md",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "ed5671fc072e89c786dfee9c4b4c293c8c41c00167b0e5047336d47b6bbac340",
+      "lines": 26
+    },
+    {
+      "path": "docs/research-v1/01-inventory.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "08da1c94b2ff415adb6edec0915cf10ab6341a3ca7d9fab9267bd8db4997910f",
+      "lines": 57
+    },
+    {
+      "path": "docs/research-v1/02-agenda.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "6408c3306b90090f8f431f9b0e0761d54c8b43da6547888e58242ebef0d14b2e",
+      "lines": 43
+    },
+    {
+      "path": "docs/research-v1/03-protocols.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "41dcd9fb099f7a23e86f544138fdf7e4e7883b714ca46423ba5b1356c507a903",
+      "lines": 120
+    },
+    {
+      "path": "docs/research-v1/04-vuzix.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "092f73204305b82f9865ea00bf4b7a01be0fc07caff543b00991698cee6d79b5",
+      "lines": 59
+    },
+    {
+      "path": "docs/research-v1/05-privacy-threat-model.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "2bea4e3d6c8e8ae11529008b160f496da8398370b00ca6a6de753e300b75014b",
+      "lines": 52
+    },
+    {
+      "path": "docs/research-v1/06-partners.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "52014d937ae895bbd198c43bd37389b4d94c786132084981225a2fb6fda1fa73",
+      "lines": 35
+    },
+    {
+      "path": "docs/research-v1/07-roadmap.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "fe9b775c7ac1b14efe828ca725384ea73dce5d0e992ee4e448b8d4581cfb31cd",
+      "lines": 39
+    },
+    {
+      "path": "docs/research-v1/08-report.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "a4b8807d7dd84b88a38f83ba77580957b8e11200eba7c9e3908bc31ddb9d8c18",
+      "lines": 75
+    },
+    {
+      "path": "docs/research-v1/09-publication-review.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "fd3af995bf53b86126d368d35929b099229f93f504d2ab26c658fa536d74bf47",
+      "lines": 38
+    },
+    {
+      "path": "docs/research-v1/README.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "67a2124025bd8fbc7c77f00899695ec2cf559ac48461de94fc21c6f4c73c3dc8",
+      "lines": 57
+    },
+    {
+      "path": "docs/research-v1/consent.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "c6f5744b60150b2dd7786797807478b6a0cbfdd35729e57cad18fd87ddc7b1c2",
+      "lines": 30
+    },
+    {
+      "path": "docs/research-v1/evidence/local-checks.txt",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "66dd8ea3206ce1ae3cf12a43d4d52c3f27c0030a5b2ca5e053bdbeeada4c46c9",
+      "lines": 57
+    },
+    {
+      "path": "docs/research-v1/evidence/publication-checks.txt",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "656981a7446ecddfcf73f5b7afbab9deee11e134680ea702ceb89065b573d0c0",
+      "lines": 9
+    },
+    {
+      "path": "docs/research-v1/measurement-template.csv",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "2161fad141f5920455bb071824dd2ed20a0cf02dc3a545512bb36c1465325c32",
+      "lines": 1
+    },
+    {
+      "path": "receiver-kit/pps_reference_receiver.py",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "f4f7dab633bb5c6e8cfaee48169f84feddece7fffbef8189a9f11b6555be7bdf",
+      "lines": 62
+    },
+    {
+      "path": "requirements-dev.txt",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "f5fe0ccc9849c80cdedf53f937c64ec5e5e23a0baac880677ed7412f0624d066",
+      "lines": 2
+    },
+    {
+      "path": "spec/PPS-WIRE-PROTOCOL-v0.1.md",
+      "last_addition_22": false,
+      "sha256_git_blob_content": "ecfb0057e7700f37ee37b13f3386d691c409ef0f8740b01018a32fd89a340fec",
+      "lines": 59
+    },
+    {
+      "path": "tools/check_community_docs.py",
+      "last_addition_22": true,
+      "sha256_git_blob_content": "5367929f65f1f4e0fceea69c3b13292c4ac63f9912d4de52b855074b6bd4a247",
+      "lines": 54
+    }
+  ]
+}

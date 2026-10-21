@@ -1,0 +1,26 @@
+{
+  "meaning": "Recorded Git content and metadata only; not certified priority, ownership or verified domicile",
+  "records": [
+    {
+      "revision": "9d89b6f4fda8025e969620ae6a2690306c7cedee",
+      "path": "README.md",
+      "recorded_author_date": "2026-10-07T22:32:11+02:00",
+      "sha256": "82c030b205f6b877b97d9f14b39742e37ac14b4de47c7a32843add151999a163",
+      "required_text": [
+        "TH Analytica / Thomas Hullin",
+        "Switzerland",
+        "PPS / PPS+"
+      ]
+    },
+    {
+      "revision": "4fa6ca07e47a9a77b662061d60e20f0482798bf7",
+      "path": "LICENSE.md",
+      "recorded_author_date": "2026-10-07T22:32:18+02:00",
+      "sha256": "d7b162b4b0b5369254a321ac39e13251f3e19ae6fb4c9503fa939d7dd946b49b",
+      "required_text": [
+        "2026 Thomas Hullin / TH Analytica",
+        "W3C Software and Document License"
+      ]
+    }
+  ]
+}

@@ -15,3 +15,13 @@ These vectors test only the T0 discovery parser.
 | V006 | 0101010000b1b2b3b4b5b6b7b812350100 | accept T0; zero DENY flags MUST NOT be described as affirmative consent |
 
 Future T1 vectors must include session nonce mismatch, policy digest mismatch, stale session and rejected authentication. Future T2 vectors must include unbound, ambiguous, low-confidence and high-confidence binding cases.
+
+## Additive semantic regression vectors (2026-10-21)
+
+[Eight literal single-bit vectors](policy-meaning-vectors.json) transcribe the
+existing wire/policy mapping into separate expected restriction names, without
+importing parser constants. The [tests](test_policy_meanings.py) check exact
+meanings, all combinations and structured fields; the
+[mutation check](../tools/check_policy_mutations.py) must detect all 28 pairwise
+meaning swaps. No wire semantics, protocol version or trust level is changed.
+These are spec-derived AI-assisted vectors, not an independent implementation.

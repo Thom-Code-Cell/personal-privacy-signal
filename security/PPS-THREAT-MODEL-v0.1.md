@@ -1,5 +1,10 @@
 # PPS / PPS+ Threat Model v0.1
 
+> Editorial review clarification (2026-10-21): Android lab assertions below are
+> reported external evidence; runnable APK/logs and supporting artifacts are absent
+> here. No T1/T2 result is validated by this repository.
+> [Current claim boundaries](../docs/review/remediation-v1/CLAIMS.md).
+
 Status: Draft for manufacturer integration
 Date: 2026-10-06
 Project: PPS / PPS+ — TH Analytica Physical AI Governance
@@ -28,7 +33,7 @@ This threat model intentionally precedes a normative BLE byte layout. Packet siz
 
 PPS v0.1 does not claim that an open BLE advertisement proves who sent it; that RSSI identifies a person in a camera frame; that Android Mobile Binding solves camera-to-person attribution; that commercial smart glasses currently enforce PPS; that UWB ranging has been validated on the current field devices; that a safety exception may be activated solely by an unverified radio assertion; or that PPS implementation alone establishes legal compliance.
 
-Existing Mobile Binding v0.2 demonstrates authenticated nearby policy transport, session/policy-bound acknowledgement and explicit user confirmation. It is a transport/binding building block, not proof of spatial subject attribution.
+Historical external claim, not verified in this repository: Mobile Binding v0.2 reportedly demonstrates authenticated nearby policy transport, session/policy-bound acknowledgement and explicit user confirmation. It is a transport/binding building block, not proof of spatial subject attribution.
 
 ## 4. Assets to protect
 
@@ -181,4 +186,4 @@ Before PPS Wire Protocol v0.1 is frozen: choose cryptographic authentication; qu
 
 This document is part of the PPS / PPS+ work by TH Analytica. It records a candidate security architecture for open technical review. It is not a claim of adoption by any smart-glasses manufacturer, standards body or platform vendor.
 
-The design deliberately preserves the distinction between what has been demonstrated in the Android lab and what remains a production security requirement.
+The design deliberately preserves the distinction between what was reported from an external Android lab (not verified in this repository) and what remains a production security requirement.

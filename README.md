@@ -9,7 +9,7 @@ invited to study, replicate, challenge and extend the published work independent
 > **Experimental, not a ready-to-use privacy protection system.** The code here is
 > a T0 parser only. PPS does not technically stop an uncooperative camera or
 > microphone. No manufacturer adoption, reliable person binding, legal effect or
-> production readiness is established. No signal or zero flags implies no consent.
+> production readiness is established. Absence of a signal, or zero flags, does not establish consent.
 
 **Person-centric privacy preferences for smart glasses, AI cameras, wearables, robots and other Physical-AI systems.**
 
@@ -165,3 +165,19 @@ license terms, rather than public visibility alone, govern reuse.
 
 These entry points preserve existing specifications and research. New proposals
 do not amend frozen v0.1 semantics by implication.
+
+## Review corrections and current evidence
+
+The [review-remediation index](docs/review/remediation-v1/README.md) records all eight
+AI preliminary findings, actual corrections and outstanding external gates.
+Use the [current claims table](docs/review/remediation-v1/CLAIMS.md) alongside
+historical reports. [Rights scope](docs/review/remediation-v1/RIGHTS.md) records
+unconfirmed authority without introducing a license.
+
+```sh
+python tools/check_policy_mutations.py
+python tools/check_review_evidence.py
+```
+
+The 56-file parent review (including its 22-file addition) is preserved separately
+from this corrective delta. AI self-review is not external independent validation.

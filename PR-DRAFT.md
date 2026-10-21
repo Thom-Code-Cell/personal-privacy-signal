@@ -1,5 +1,9 @@
 # Research & Validation – Experimental: PPS Package v1.0
 
+> HISTORICAL SNAPSHOT: research package before community CI was added.
+> NOT_RUN statements below refer to that earlier stage, not the current branch.
+> See [current evidence and limits](docs/review/remediation-v1/CLAIMS.md). Original results retained.
+
 **Experimental research only. Keine einsatzbereite Datenschutzlösung.**
 Android-, Vuzix- und echte Fremdgerätevalidierung stehen aus.
 Freigegeben ist ausschliesslich die öffentliche Draft-PR; kein Merge,

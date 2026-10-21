@@ -41,3 +41,10 @@ Markerrotation vs. Druckbadge/Barrierefreiheit; explizite Challenge ohne biometr
 Identität; rechtmässige Raumautorität und Revokation offline; EID-/Schlüsselrotation;
 Anti-Relay ohne falsche Distanzbehauptung; konkrete Ressourcenbudgets je Hardware;
 akustische Zumutbarkeit. Keine dieser Fragen wird mit BLE-RSSI oder einer Signatur allein gelöst.
+
+## Confirmatory plan gate (review correction, 2026-10-21)
+
+Use the [preregistration requirements](../review/remediation-v1/ANALYSIS-PLAN.md)
+before any confirmatory data collection. Explicitly choose point estimate versus
+confidence-bound acceptance, cluster method, missingness and multiple-condition
+handling. Existing targets are provisional and grant no study or device approval.
