@@ -55,3 +55,16 @@ gelockt. Ein Produktions-Supply-Chain-Nachweis ist damit nicht erbracht.
 
 Dokumentation und Fremdberichte sind keine ausgeführten Gerätetests. Fehlende Evidenz
 bleibt NOT_MEASURED/BLOCKED; kein stilles Hochstufen durch grüne Softwaretests.
+
+## P7/P8 extensions for independent research (19.11.2026)
+
+The following new files are **non-normative, synthetic or unmeasured on devices**, and do not retrospectively change the October research results above.
+
+10. [P7: AI systems / purpose-guard risk addendum](10-autonomous-systems-risk-addendum.md)
+11. [P7: proposed synthetic governance scenarios](11-p7-governance-test.md)
+12. [P8: identity and location research](12-identity-location-research.md)
+13. [P8: community validation protocol](13-p8-validation-protocol.md)
+14. [P8: independent research roadmap](14-p8-roadmap.md)
+15. [Community roles and research scope](15-community-research-scope.md)
+
+TH Analytica supplies research concepts and, under separately approved website contracts, informational physical-place integration files. Independent volunteers and manufacturers may run real device experiments under their own consent, ethics and security requirements. No manufacturer testing or Android product build is commissioned here. [Physical-place website guide](../PPS-PHYSICAL-PLACE-WEBSITE-INTEGRATION-GUIDE.md).

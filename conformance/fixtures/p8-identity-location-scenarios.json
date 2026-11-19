@@ -1,0 +1,572 @@
+{
+  "version": "P8-draft-2026-11-19",
+  "status": "PROPOSED_SYNTHETIC_ONLY",
+  "hardware_validation": "NOT_MEASURED",
+  "meaning": "Synthetic expected policy decisions, not device or camera enforcement results",
+  "cases": [
+    {
+      "id": "P8-01",
+      "title": "No device is not permission",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-02",
+      "title": "Local face authentication cannot identify camera subject",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [
+          "identification"
+        ],
+        "device_auth": "LOCAL_AUTH_ONLY",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-03",
+      "title": "Session verified but camera subject unbound",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [
+          "identification"
+        ],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-04",
+      "title": "Ambiguous multiple people",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [
+          "identification"
+        ],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "AMBIGUOUS",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-05",
+      "title": "Independently bound restrictive person preference",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [
+          "identification"
+        ],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "INDEPENDENTLY_VERIFIED",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-06",
+      "title": "Bound session denial of training",
+      "trial": {
+        "operation": "training",
+        "personal_denies": [
+          "training"
+        ],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "INDEPENDENTLY_VERIFIED",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-07",
+      "title": "Website metadata is advisory only",
+      "trial": {
+        "operation": "profiling",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "WEB_METADATA_ONLY",
+        "venue_denies": [
+          "profiling"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-08",
+      "title": "Signed place rule without zone proof",
+      "trial": {
+        "operation": "profiling",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "SIGNED_ZONE_UNCONFIRMED",
+        "venue_denies": [
+          "profiling"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-09",
+      "title": "Verified applicable building denial",
+      "trial": {
+        "operation": "profiling",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "VERIFIED_APPLICABLE",
+        "venue_denies": [
+          "profiling"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-10",
+      "title": "Building protects people without phones",
+      "trial": {
+        "operation": "capture",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "VERIFIED_APPLICABLE",
+        "venue_denies": [
+          "capture"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-11",
+      "title": "Expired zone evidence",
+      "trial": {
+        "operation": "profiling",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "EXPIRED",
+        "venue_denies": [
+          "profiling"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-12",
+      "title": "Nearby through wall cannot prove zone",
+      "trial": {
+        "operation": "retention",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "SIGNED_ZONE_UNCONFIRMED",
+        "venue_denies": [
+          "retention"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-13",
+      "title": "Person preference does not override place",
+      "trial": {
+        "operation": "cloud_upload",
+        "personal_denies": [],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "INDEPENDENTLY_VERIFIED",
+        "venue_state": "VERIFIED_APPLICABLE",
+        "venue_denies": [
+          "cloud_upload"
+        ],
+        "independent_legal_basis": true,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-14",
+      "title": "Harmful downstream reuse with no phone",
+      "trial": {
+        "operation": "harmful_downstream_reuse",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-15",
+      "title": "Harmful downstream reuse with phone",
+      "trial": {
+        "operation": "harmful_downstream_reuse",
+        "personal_denies": [],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "INDEPENDENTLY_VERIFIED",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-16",
+      "title": "Game framing cannot upgrade harmful use",
+      "trial": {
+        "operation": "harmful_downstream_reuse",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "GAME_FRAMING"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-17",
+      "title": "Unauthorised safety processing",
+      "trial": {
+        "operation": "safety_inference",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-18",
+      "title": "Only scoped independently reviewed safety processing",
+      "trial": {
+        "operation": "safety_inference",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": true,
+        "safety_authorization": "INDEPENDENTLY_AUTHORIZED_NARROW",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "SCOPED_REVIEW",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-19",
+      "title": "Safety requires separate legal basis",
+      "trial": {
+        "operation": "safety_inference",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "INDEPENDENTLY_AUTHORIZED_NARROW",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-20",
+      "title": "Exception cannot silently negate stricter place rule",
+      "trial": {
+        "operation": "safety_inference",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "VERIFIED_APPLICABLE",
+        "venue_denies": [
+          "safety_inference"
+        ],
+        "independent_legal_basis": true,
+        "safety_authorization": "INDEPENDENTLY_AUTHORIZED_NARROW",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-21",
+      "title": "No signal does not prevent narrowly authorised safety review",
+      "trial": {
+        "operation": "safety_inference",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": true,
+        "safety_authorization": "INDEPENDENTLY_AUTHORIZED_NARROW",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "SCOPED_REVIEW",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-22",
+      "title": "Receiver without hooks cannot claim real blocking",
+      "trial": {
+        "operation": "harmful_downstream_reuse",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "UNSUPPORTED",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "UNSUPPORTED",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-23",
+      "title": "Unauthenticated signal cannot turn off device functions",
+      "trial": {
+        "operation": "capture",
+        "personal_denies": [
+          "capture"
+        ],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-24",
+      "title": "Verified zone cloud restrictions follow downstream",
+      "trial": {
+        "operation": "cloud_upload",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "VERIFIED_APPLICABLE",
+        "venue_denies": [
+          "cloud_upload"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "DENY",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-25",
+      "title": "Policy and geographic applicability are separate",
+      "trial": {
+        "operation": "training",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "SIGNED_ZONE_UNCONFIRMED",
+        "venue_denies": [
+          "training"
+        ],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-26",
+      "title": "External legal basis not automatically person permission",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [],
+        "device_auth": "ABSENT",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": true,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-27",
+      "title": "Authenticated phone alone cannot enable identification",
+      "trial": {
+        "operation": "identification",
+        "personal_denies": [],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "UNBOUND",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": true,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    },
+    {
+      "id": "P8-28",
+      "title": "No location inference from session success",
+      "trial": {
+        "operation": "retention",
+        "personal_denies": [],
+        "device_auth": "SESSION_VERIFIED",
+        "subject_binding": "INDEPENDENTLY_VERIFIED",
+        "venue_state": "ABSENT",
+        "venue_denies": [],
+        "independent_legal_basis": false,
+        "safety_authorization": "NONE",
+        "receiver_enforcement": "SIMULATION",
+        "context": "REAL"
+      },
+      "expected_decision": "REVIEW_REQUIRED",
+      "expected_enforcement": "SIMULATED_ONLY",
+      "status": "SYNTHETIC_TESTED_NOT_DEVICE_MEASURED"
+    }
+  ]
+}

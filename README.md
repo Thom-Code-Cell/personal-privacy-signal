@@ -184,3 +184,13 @@ python tools/check_review_evidence.py
 
 The 56-file parent review (including its 22-file addition) is preserved separately
 from this corrective delta. AI self-review is not external independent validation.
+
+## New P7/P8 community research proposals (19 November 2026)
+
+**Informative, experimental and not device-validated.** [Research scope](docs/research-v1/15-community-research-scope.md) records the agreed division of responsibility: TH Analytica provides concepts and example specifications; independent contributors may implement and validate them. TH Analytica does not undertake an in-house Android/hardware validation program.
+
+- [P7 purpose-limitation research](docs/research-v1/10-autonomous-systems-risk-addendum.md) and [synthetic governance scenarios](docs/research-v1/11-p7-governance-test.md).
+- [P8 identity and location research](docs/research-v1/12-identity-location-research.md), [community validation protocol](docs/research-v1/13-p8-validation-protocol.md) and [external research roadmap](docs/research-v1/14-p8-roadmap.md).
+- [Physical-place website integration guide](docs/PPS-PHYSICAL-PLACE-WEBSITE-INTEGRATION-GUIDE.md) for separately commissioned, operator-approved site files, **not** a geofence or device enforcement system.
+
+Synthetic sample decisions and fixture-validation checks are not evidence of working camera, biometric, BLE, spatial or OS/firmware enforcement. No person loses fundamental protection because they lack a signal, smartphone or registered identity. The frozen v0.1 candidate and current evidence limits remain unchanged.
