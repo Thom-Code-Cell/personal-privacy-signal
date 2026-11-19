@@ -4,6 +4,20 @@ import importlib.util
 import json
 import unittest
 from pathlib import Path
+import os
+import subprocess
+import sys
+
+if os.getenv("GITHUB_ACTIONS") == "true":
+    fmt = subprocess.run(
+        [sys.executable, "-m", "ruff", "format", "--diff",
+         "conformance/test_pps_identity_location.py",
+         "receiver-kit/pps_identity_location_reference.py",
+         "tools/validate_p7_fixtures.py"],
+        capture_output=True, text=True, check=False
+    )
+    print("RUFF_DIFF_START\n" + fmt.stdout + fmt.stderr + "\nRUFF_DIFF_END")
+
 
 ROOT = Path(__file__).resolve().parent.parent
 SPEC = importlib.util.spec_from_file_location("pps_p8_reference", ROOT / "receiver-kit" / "pps_identity_location_reference.py")
