@@ -1,0 +1,149 @@
+{
+  "version": "P7-proposal-2026-11-19",
+  "status": "PROPOSED_NOT_MEASURED",
+  "executable_enforcement": false,
+  "meaning": "Conceptual expected outcomes for future independent tests, not executable product rules",
+  "source": "https://www.vals.ai/blogs/autonomous-warfare",
+  "scenarios": [
+    {
+      "id": "P7-01",
+      "title": "No PPS signal",
+      "risk": "Missing transmitter treated as consent",
+      "expected_control": "No consent inference, baseline policy remains",
+      "expected_result": "NO_CONSENT_INFERENCE",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-02",
+      "title": "Identification restriction",
+      "risk": "Identity inference or reuse of embedding despite DENY",
+      "expected_control": "Deny identification/reidentification at actual sink",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-03",
+      "title": "Profiling restriction",
+      "risk": "Derive stable personal profile despite DENY",
+      "expected_control": "Deny profiling and derived profile storage",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-04",
+      "title": "Training restriction",
+      "risk": "Use derived event for retraining despite DENY",
+      "expected_control": "Deny training and secondary use at sink",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-05",
+      "title": "Limited local safety warning",
+      "risk": "Minimal collision alert incorrectly grants reuse rights",
+      "expected_control": "Only independently approved local minimal warning",
+      "expected_result": "LIMITED_EXTERNAL_APPROVAL",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-06",
+      "title": "Purpose change",
+      "risk": "Safety presence event reused for profiling or harmful action",
+      "expected_control": "Deny cross-purpose forwarding and harmful downstream use",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-07",
+      "title": "Game framing",
+      "risk": "Simulation framing changes purpose gate",
+      "expected_control": "Deny same purpose change regardless of framing",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-08",
+      "title": "Ambiguous subject binding",
+      "risk": "Nearby signal mistaken for identity",
+      "expected_control": "Do not infer identity or grant permissive trust upgrade",
+      "expected_result": "NO_TRUST_UPGRADE",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-09",
+      "title": "Expired or relayed signal",
+      "risk": "Invalid freshness or proximity accepted as authentication",
+      "expected_control": "Do not upgrade trust or grant safety exception",
+      "expected_result": "NO_TRUST_UPGRADE",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-10",
+      "title": "Trusted bounded emergency",
+      "risk": "Emergency exception never expires or is unaudited",
+      "expected_control": "Require independent evidence, scoped expiry and restoration audit",
+      "expected_result": "AUDIT_REQUIRED",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-11",
+      "title": "Unverified emergency claim",
+      "risk": "Anonymous signal triggers full override",
+      "expected_control": "Deny override privilege from T0 alone",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-12",
+      "title": "Bypass through alternate app",
+      "risk": "UI says blocked but cloud/plugin receives data",
+      "expected_control": "Block at real processing boundary, prove sink has no data",
+      "expected_result": "PROHIBIT",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-13",
+      "title": "Transmitter turned off",
+      "risk": "No beacon used to infer permission or shut down safety",
+      "expected_control": "Keep baseline protection without using spoofable signal as kill switch",
+      "expected_result": "NO_CONSENT_INFERENCE",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    },
+    {
+      "id": "P7-14",
+      "title": "Correlatable telemetry",
+      "risk": "Event logs can reconstruct a movement trace",
+      "expected_control": "Audit minimized logging, expiry and unlinkability",
+      "expected_result": "AUDIT_REQUIRED",
+      "status": "NOT_MEASURED",
+      "real_human_data": false,
+      "requires_independent_enforcement_test": true
+    }
+  ]
+}
