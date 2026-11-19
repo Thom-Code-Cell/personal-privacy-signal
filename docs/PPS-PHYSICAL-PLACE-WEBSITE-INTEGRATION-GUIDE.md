@@ -22,7 +22,7 @@ on any existing customer website.
 1. Human-readable accessible policies including language, scope, exceptions,
    site rules and last-review date.
 2. A generic **informative** JSON file derived from
-   [`conformance/fixtures/p8-venue-policy-template.json`](../../conformance/fixtures/p8-venue-policy-template.json),
+   [`conformance/fixtures/p8-venue-policy-template.json`](../conformance/fixtures/p8-venue-policy-template.json),
    with operator-reviewed text and **no claim of verified signature or enforcement**.
 3. Optional `schema.org/Place`-type structured data for the place's public facts,
    using established schema fields only. PPS-specific semantics remain in a
