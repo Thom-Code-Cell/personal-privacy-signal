@@ -1,0 +1,20 @@
+{
+  "status": "NON_EXECUTABLE_EXAMPLE",
+  "claim": "Website metadata is advisory, not zone evidence or enforcement",
+  "issuer": "https://example.invalid",
+  "zone_label": "SYNTHETIC_TEST_ROOM_A",
+  "authority_verification": "NOT_IMPLEMENTED",
+  "signature_verification": "NOT_IMPLEMENTED",
+  "spatial_applicability_verification": "NOT_IMPLEMENTED",
+  "device_enforcement": "NOT_IMPLEMENTED",
+  "privacy_restrictions": [
+    "capture",
+    "identification",
+    "profiling",
+    "cloud_upload",
+    "training"
+  ],
+  "expiry_and_revocation": "NOT_SPECIFIED",
+  "human_without_device_protected": true,
+  "warning": "Do not publish or interpret as an enforceable PPS+ venue rule"
+}
